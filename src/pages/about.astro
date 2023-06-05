@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import aidan from '../assets/aidan.jpg';
+---
+
+<Layout
+	title='About | Aidan'
+	description='Aidan is a student and full stack software engineer'
+	url='https://www.aidanjbennett.com/about'
+>
+	<div class='md:flex'>
+		<div class='items-center'>
+			<h1 class='font-medium text-2xl underline'>About me</h1>
+			<div class='md:w-96 pt-4 text-lg'>
+				<p>
+					Hi, I'm a full stack software engineer from Nottingham, England 🌧️. I'm
+					going to be studying a Foundation degree in Software Engineering 💻 at
+					Sheffield Hallam. I've been programming for around three years now, and
+					I've been working as a freelance developer for around one year.
+				</p>
+
+				<h2 class='pt-2 font-medium underline text-2xl'>Skill's</h2>
+				<ul class='ml-4 list-disc'>
+					<li>HTML & CSS</li>
+					<li>Tailwind CSS</li>
+					<li>JavaScript / TypeScript</li>
+					<li>Golang</li>
+					<li>Node.js</li>
+					<li>Svelte Kit</li>
+					<li>Vue.js</li>
+					<li>Express.js</li>
+					<li>PostgreSQL</li>
+					<li>MongoDB</li>
+					<li>Git / Github</li>
+				</ul>
+			</div>
+		</div>
+		<div class='sm:pl-10 md:pl-24 pb-2 pt-2 xl:pl-96'>
+			<Image
+				src={aidan}
+				alt='Aidan Bennett'
+				class='rounded-md shadow-2xl shadow-black md:w-96 xl:w-[550px] border-2 border-black'
+			/>
+		</div>
+	</div>
+</Layout>

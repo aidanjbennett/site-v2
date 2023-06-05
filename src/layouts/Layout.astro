@@ -1,0 +1,46 @@
+---
+import Nav from '../components/Nav.astro';
+
+export interface Props {
+	title: string;
+	description: string;
+	url: string;
+}
+
+const { title, description, url } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' href='/favicon.ico' />
+		<title>{title}</title>
+
+		<!--Open Graph-->
+		<meta property='og:title' content={title} />
+		<meta property='og:description' content={description} />
+		<meta property='og:url' content={url} />
+		<meta property='og:type' content='website' />
+		<meta name='generator' content={Astro.generator} />
+
+		<!--Twitter-->
+		<meta name='twitter:card' content='summary_large_image' />
+		<meta name='twitter:site' content='@aidanjbennett' />
+		<meta name='twitter:creator' content='@aidanjbennett' />
+		<meta name='twitter:title' content={title} />
+		<meta name='twitter:description' content={description} />
+		<meta name='twitter:url' content={url} />
+
+		<!-- Verify mastodon -->
+		<link rel='me' href='https://mastodon.social/@aidanbennett' />
+	</head>
+
+	<body class='h-screen bg-gradient-to-r from-violet-300 to-fuchsia-300'>
+		<Nav />
+		<div class='px-10 pt-10'>
+			<slot />
+		</div>
+	</body>
+</html>

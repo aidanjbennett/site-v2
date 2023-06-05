@@ -1,0 +1,49 @@
+{
+	"regions": ["lhr1"],
+	"redirects": [
+		{
+			"source": "/discord",
+			"destination": "https://discord.gg/edRCfUzArj"
+		},
+
+		{
+			"source": "/youtube",
+			"destination": "https://youtube.com/@aidanbennett"
+		},
+
+		{
+			"source": "/twitter",
+			"destination": "https://twitter.com/aidanjbennett"
+		},
+
+		{
+			"source": "/github",
+			"destination": "https://github.com/aidanjbennett"
+		},
+
+		{
+			"source": "/twitch",
+			"destination": "https://twitch.tv/aidanjbennett"
+		},
+
+		{
+			"source": "/instagram",
+			"destination": "https://instagram.com/aidanjbennett"
+		},
+
+		{
+			"source": "/linkedin",
+			"destination": "https://linkedin.com/in/aidanjbennett"
+		},
+
+		{
+			"source": "/polywork",
+			"destination": "https://poly.me/aidanbennett"
+		},
+
+		{
+			"source": "/links",
+			"destination": "https://bento.me/aidanjbennett"
+		}
+	]
+}
