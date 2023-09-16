@@ -5,8 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sitemap()],
   site: 'https://www.aidanjbennett.com',
+  integrations: [tailwind(), sitemap({})],
   experimental: {
     assets: true,
   },
